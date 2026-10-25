@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Launcher settings. Edit, then run launcher/build-and-install.sh.
-  Package names: tools/venv/bin/python -I tools/tv.py 'pm list packages'
+  Launcher settings. Edit, then rebuild.
 -->
 <resources>
     <!-- Dock apps, left to right. Apps that aren't installed are skipped. -->
@@ -12,7 +11,6 @@
         <item>com.amazon.amazonvideo.livingroom</item>
         <item>com.apple.atve.androidtv.appletv</item>
     </string-array>
-    </string-array>
 
     <!-- Never shown as tiles: system helpers, and the Live TV app (it's in the Inputs menu). -->
     <string-array name="hidden_apps">
@@ -22,9 +20,7 @@
         <item>com.tcl.dashboard</item>
     </string-array>
 
-    <!-- The TV's Live TV / tuner app, listed last in the Inputs menu. Empty to leave it out.
-         Common ones: com.tcl.tv (TCL), com.mediatek.wwtv.tvcenter (Xiaomi, many MediaTek sets),
-         com.google.android.tv (Google Live Channels), com.sony.dtv.tvx (Sony). -->
+    <!-- The TV's Live TV / tuner app, listed last in the Inputs menu. Empty to leave it out. -->
     <string name="live_tv_package" translatable="false">com.tcl.tv</string>
 
     <!-- The manufacturer's own source picker, used if switching to an input directly fails. -->
